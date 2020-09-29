@@ -11,9 +11,9 @@ const Landing = ({ isAuthenticated }) => {
       <section className='landing'>
         <div className='dark-overlay'>
           <div className='landing-inner'>
-            <h1 className='x-large'>Developer Social</h1>
+            <h1 className='x-large'>DevHub</h1>
             <p className='lead'>
-              Create a developer profile/portfolio, share your profile and get
+              Create a developer profile,share your profile and get
               in touch with other fellow developers around the world !
             </p>
             <div className='buttons'>

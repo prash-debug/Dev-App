@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://sunny99:sunny99@devsocial.toqfv.mongodb.net/DevSocial?retryWrites=true&w=majority",
+  "jwtSecret": "mysecret",
+  "githubClientID": "fcd330f71ede1467ff6a",
+  "githubSecret": "8d4ebbc9464d5cd5197c387268ea9e77d7cb0bc3"
+}
