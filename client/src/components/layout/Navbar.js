@@ -15,6 +15,10 @@ const Navbar = ({ auth: { isAuthenticated , loading}, logout }) => {
           <i className="fas fa-user" />{' '}
           <span className="hide-sm">Dashboard</span>
         </Link>
+        <Link to="/join">
+          <i className="fas fa-comment-alt" />{' '}
+          <span className="hide-sm">Chat</span>
+        </Link>
       </li> 
       <li>
         <a onClick={logout} href="/">
@@ -43,7 +47,7 @@ const Navbar = ({ auth: { isAuthenticated , loading}, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i className="fas fa-code" /> DevConnector
+          <i className="fas fa-code" /> DevHub
         </Link>
       </h1>
       {!loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}

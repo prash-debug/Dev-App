@@ -14,13 +14,18 @@ import AddEducation from './components/profile-form/AddEducation';
 import PrivateRoute from './components/routing/PrivateRoute';
 import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
+import './App.css';
+
+import Chat from './components/Chat/Chat';
+import Join from './components/Join/Join';
+
 
 // Redux Implementation
 import { Provider } from 'react-redux';
 import store from './store';
 import {loadUser} from './actions/auth';
 
-import './App.css';
+
 import setAuthToken from './utils/setAuthToken';
 import ProfileForm from './components/profile-form/ProfileForm';
 
@@ -44,6 +49,8 @@ const App = () => {
             <Route exact path='/login' component={Login} />
             <Route exact path='/profiles' component={Profiles} />
             <Route exact path='/profile/:id' component={Profile} />
+            <PrivateRoute path="/join" exact component={Join} />
+            <PrivateRoute path="/chat" component={Chat} />
             <PrivateRoute exact path='/dashboard' component={ Dashboard } />
             <PrivateRoute exact path='/create-profile' component={ProfileForm} />
             <PrivateRoute exact path='/edit-profile' component={ProfileForm} />
