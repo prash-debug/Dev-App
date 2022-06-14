@@ -2,7 +2,7 @@
 
 # Quick Start 🚀
 
-###### ** Install server dependencies **
+**Install server dependencies**
 npm install
 
 ###### Install client dependencies
